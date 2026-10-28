@@ -1,0 +1,23 @@
+# dsh-voicepack-plugin — bundle patch
+#
+# 推荐安装方式：`node tools/install.mjs`（会把带路径的 insert 写进 profile patch）。
+#
+# 也可以作为 DSH bundle 安装：
+#   dsh plugin --profile desktop add https://github.com/banzhangdeerfenzhiyi/dsh-voicepack-plugin
+# 或在 DSH 的「添加插件」里填 GitHub 仓库地址（不是 npm 包名）。
+#
+# 路径在运行时自动探测（WECHATAGENT_WORKSPACE → ~/Documents/data/workspace；
+# RVC_ROOT → ~/rvc → ~/Documents/rvc），探测不到时只影响对应功能，不阻止挂载。
+- insert:
+    - id: dsh-voicepack
+      name: 'dsh-voicepack-plugin'
+      config:
+        enabled: true
+        promptEnabled: true
+        defaultVoice: 'zh-CN-XiaoyiNeural'
+        maxCharsPerVoice: 120
+        maxVoicesPerCall: 3
+        rvcEnabled: true
+        # workspace: 'D:/WeChatAgent/data/workspace'
+        # rvcRoot: 'D:/rvc'
+        hookUrl: 'http://127.0.0.1:30001'
