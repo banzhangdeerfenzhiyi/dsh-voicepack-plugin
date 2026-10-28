@@ -1,5 +1,7 @@
 # dsh-voicepack-plugin — 微信语音包
 
+[![npm](https://img.shields.io/npm/v/dsh-voicepack-plugin.svg)](https://www.npmjs.com/package/dsh-voicepack-plugin) [![license](https://img.shields.io/npm/l/dsh-voicepack-plugin.svg)](LICENSE)
+
 > 独立仓库：<https://github.com/banzhangdeerfenzhiyi/dsh-voicepack-plugin>
 > 属于 DSH 微信人格工具链；不替换已有的 `dsh-wechatagent-voice-plugin`（它的 `send_voice` 继续用默认音色）。
 
@@ -53,14 +55,14 @@ DSH 会拉取仓库并读取 `package.json` 的 `dsh.bundle`，按 `cordis.patch
 dsh plugin --profile desktop add https://github.com/banzhangdeerfenzhiyi/dsh-voicepack-plugin
 ```
 
-### 方式 C：npm 包名（发布到 npm 后可用）
+### 方式 C：npm 包名（已发布，最省事）
 
 ```bash
 dsh plugin --profile desktop add dsh-voicepack-plugin
 ```
 
-> 维护者提示：npm 发布配置与自动发布流程已就绪（`.github/workflows/publish-npm.yml`，
-> 需要仓库 secret `NPM_TOKEN`）。发布后把本节的「发布后可用」提示去掉即可。
+> 当前版本：`0.1.0`（[npm 页面](https://www.npmjs.com/package/dsh-voicepack-plugin)）。
+> 中国大陆镜像源同步可能延迟几分钟；如果暂时装不到，指向官方源 `https://registry.npmjs.org` 即可。
 
 ### 方式 D：本地脚本（开发者）
 
