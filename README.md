@@ -64,6 +64,9 @@ dsh plugin --profile desktop add dsh-voicepack-plugin
 > 当前版本：`0.1.0`（[npm 页面](https://www.npmjs.com/package/dsh-voicepack-plugin)）。
 > 中国大陆镜像源同步可能延迟几分钟；如果暂时装不到，指向官方源 `https://registry.npmjs.org` 即可。
 
+> **安装时如果弹出「需要允许安装脚本」**：依赖 `msedge-tts` 带有一个 `preinstall: npx only-allow pnpm`
+> 检查脚本（只是强制使用 pnpm，无其他动作），点 **「允许这些脚本并重试」** 即可继续安装。
+
 ### 方式 D：本地脚本（开发者）
 
 ```bash
